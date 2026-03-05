@@ -28,7 +28,7 @@ module cpu_testbench;
 
     initial begin
 
-        #100 $finish;
+        #1000 $finish;
 
     end
 

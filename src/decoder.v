@@ -302,12 +302,12 @@ case (instr_type)
       
     case (opcode)
 
-        01101: begin
+        5'b01101: begin
 
          wb_ctrl = 2'b11;         // for choosing writeback as immediate  (here the immediate generator already creates a 12 bit shift in the immediate so we just pass the value to the rd from writeback mux)
         end
 
-        00101: begin
+        5'b00101: begin
 
          alu_src_A = 1;   // for choosing A as PC
          alu_src_B = 1;   // for choosing  B as imm (imm is already shifted by 12)

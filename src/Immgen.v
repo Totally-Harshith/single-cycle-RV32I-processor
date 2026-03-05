@@ -40,7 +40,7 @@ always @(*)begin
 
     U_format:begin
 
-        immediate ={instr[31:12],{12{1'b0}}};                             // Following U_type format and adding 0 at the end
+        immediate ={instr[31:12],12'b0};                             // Following U_type format and adding 0 at the end
 
     end
 
